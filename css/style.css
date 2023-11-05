@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/graphik-regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url(../fonts/graphik-medium.ttf);
+    font-weight: 500;
+}
+
+* {
+    font-family: 'Graphik';
+    font-weight: 500;
+}
+
+body {
+    background-color: #181818;
+}
+
+.container {
+    width: 1249px;
+    padding: 0 15px;
+    margin: 0 auto;
+    outline: solid red;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-img {
+    width: 186px;
+}
+
+.header-navigation {
+    margin: 0 183.5px 0 136.5px;
+}
+
+.header-pages {
+    display: flex;
+    gap: 51px;
+}
+
+.header-link {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+
+    transition: color 300ms cubic-bezier(0, -0.48, .61, .97);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: #43B6FF;
+}
+
+.header-btn {
+    width: 139px;
+    height: 52px;
+
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid var(--light-text, #FFF);
+    box-shadow: 0px 4px 31px 0px rgba(0, 0, 0, 0.15);
+
+    color: #FFF;
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: 0.2px;
+
+    transition: background-color 300ms ease-in, border 300ms ease-in, color 300ms ease-in;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    background-color: #fff;
+    border: none;
+    color: #000;
+}
